@@ -127,8 +127,6 @@ class robot:
     def __repr__(self): #allows us to print robot attributes.
         return '[x=%.6s y=%.6s orient=%.6s]' % (str(self.x), str(self.y), 
                                                 str(self.orientation))
-    
-    ############# ONLY ADD/MODIFY CODE BELOW HERE ###################
        
            
     # --------
@@ -187,8 +185,6 @@ class robot:
     # and modify it so that it simulates bearing noise
     # according to
     #           self.bearing_noise
-
-    ############## ONLY ADD/MODIFY CODE ABOVE HERE ####################
 
 # --------
 #
@@ -323,10 +319,6 @@ def particle_filter(motions, measurements, N=500):
 ## --------
 ## TEST CASES:
 ## 
-##1) Calling the particle_filter function with the following
-##    motions and measurements should return a [x,y,orientation]
-##    vector near [x=93.476 y=75.186 orient=5.2664], that is, the
-##    robot's true location.
 ##
 ##motions = [[2. * pi / 10, 20.] for row in range(8)]
 ##measurements = [[4.746936, 3.859782, 3.045217, 2.045506],
@@ -339,11 +331,6 @@ def particle_filter(motions, measurements, N=500):
 ##
 ##print particle_filter(motions, measurements)
 
-## 2) You can generate your own test cases by generating
-##    measurements using the generate_ground_truth function.
-##    It will print the robot's last location when calling it.
-##
-##
 number_of_iterations = 6
 motions = [[2. * pi / 20, 12.] for row in range(number_of_iterations)]
 
