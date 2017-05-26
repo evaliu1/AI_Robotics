@@ -44,10 +44,6 @@ cost = [2, 1, 20] # cost has 3 values, corresponding to making
 #  [' ', ' ', ' ', '#', ' ', ' ']]
 # ----------
 
-# ----------------------------------------
-# modify code below
-# ----------------------------------------
-
 def optimum_policy2D(grid,init,goal,cost):
     value = [[[999 for row in range(len(grid[0]))] for col in range(len(grid))],
              [[999 for row in range(len(grid[0]))] for col in range(len(grid))],
@@ -60,7 +56,7 @@ def optimum_policy2D(grid,init,goal,cost):
               [[' ' for row in range(len(grid[0]))] for col in range(len(grid))]]
 
     
-    plan = [[' ' for row in range(len(grid[0]))] for col in range(len(grid))]
+     plan = [[' ' for row in range(len(grid[0]))] for col in range(len(grid))]
 
     change = True
     while change:
